@@ -171,9 +171,9 @@
       {% if author.spirit_animal_image %}
         <div class="author__spirit-animal" style="text-align: center; margin: 1em 0;">
           {% if author.spirit_animal_image contains "://" %}
-            <img src="{{ author.spirit_animal_image }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" style="width: 120px; border-radius: 8px;" />
+            <img src="{{ author.spirit_animal_image }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" style="width: 100px; border-radius: 8px;" />
           {% else %}
-            <img src="{{ author.spirit_animal_image | prepend: "/images/" | prepend: base_path }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" style="width: 120px; border-radius: 8px;" />
+            <img src="{{ author.spirit_animal_image | prepend: "/images/" | prepend: base_path }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" style="width: 100px; border-radius: 8px;" />
           {% endif %}
           {% if author.spirit_animal_text %}
             <p class="author__bio" style="margin-top: 0.5em;">{{ author.spirit_animal_text }}</p>
