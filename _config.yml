@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD student at NC State University"
   location         : "Raleigh, NC"
-  employer         : "NC State University"
+  # employer         : "NC State University"
   uri              : # URL
   email            : "dkasher@ncsu.edu" 
 
@@ -35,7 +35,7 @@ author:
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=skRLTuEAAAAJ&hl=en"
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0007-3325-0224"
+  # orcid            : "https://orcid.org/my-orcid?orcid=0009-0007-3325-0224"
   researchgate     : # URL
   scopus           : # URL
 
