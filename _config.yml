@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
-title                    : ""
+title                    : "Darsh Asher"
 title_separator          : "-"
 name                     : &name "Darsh Kasher"
 description              : &description "A personal website for Darsh Kasher."
@@ -61,6 +61,8 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+  spirit_animal_image: "rigby_cat.gif"
+  spirit_animal_text: "My Spirit Animal"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
