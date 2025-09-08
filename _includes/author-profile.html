@@ -23,19 +23,6 @@
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
-      <!-- Spirit Animal Image -->
-      {% if author.spirit_animal_image %}
-        <div class="author__avatar">
-          {% if author.spirit_animal_image contains "://" %}
-            <img src="{{ author.spirit_animal_image }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" />
-          {% else %}
-            <img src="{{ author.spirit_animal_image | prepend: '/images/' | prepend: base_path }}" class="author__avatar" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" />
-          {% endif %}
-          {% if author.spirit_animal_text %}
-            <p class="author__bio">{{ author.spirit_animal_text }}</p>
-          {% endif %}
-        </div>
-      {% endif %}
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
@@ -177,7 +164,22 @@
       {% endif %}
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
+      {% endif %}    
+
+      <!-- Spirit Animal Image -->
+      {% if author.spirit_animal_image %}
+        <div class="author__avatar">
+          {% if author.spirit_animal_image contains "://" %}
+            <img src="{{ author.spirit_animal_image }}" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" />
+          {% else %}
+            <img src="{{ author.spirit_animal_image | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.spirit_animal_text | default: 'Spirit Animal' }}" />
+          {% endif %}
+          {% if author.spirit_animal_text %}
+            <p class="author__bio">{{ author.spirit_animal_text }}</p>
+          {% endif %}
+        </div>
       {% endif %}      
+
     </ul>
   </div>
 </div>
